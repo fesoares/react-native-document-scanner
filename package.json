@@ -1,6 +1,6 @@
 {
-  "name": "@woonivers/react-native-document-scanner",
-  "version": "2.0.1",
+  "name": "@fesoares/react-native-document-scanner",
+  "version": "2.0.2",
   "description": "Scan documents, automatic border detection, automatic crop",
   "main": "lib/module/index.js",
   "types": "lib/typescript/index.d.ts",
@@ -77,8 +77,8 @@
     "react-dom": "16.8.3",
     "react-native": "~0.59.8",
     "release-it": "^12.3.0",
-    "typescript": "^3.5.2",
-    "semantic-release": "^15.13.24"
+    "semantic-release": "^15.13.24",
+    "typescript": "^3.5.2"
   },
   "peerDependencies": {
     "react": "*",
