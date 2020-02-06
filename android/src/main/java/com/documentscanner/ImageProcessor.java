@@ -351,7 +351,11 @@ public class ImageProcessor extends Handler {
     }
 
     private void enhanceDocument(Mat src) {
-        // Imgproc.cvtColor(src, src, Imgproc.COLOR_RGBA2GRAY); if want gray scanned
+        // Imgproc.cvtColor(src, src, Imgproc.COLOR_RGBA2GRAY); // if want gray scanned
+
+        Core.transpose(src, src);
+        Core.flip(src, src, 0);
+
         src.convertTo(src, CvType.CV_8UC1, colorGain, colorBias);
     }
 
